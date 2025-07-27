@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignupCRM</title>
+    <style>
+        .form1
+       {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-image:url(crm4.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .f1
+        {  
+            background-color:rgb(0,0,0,0.4);
+            color:cornsilk;
+            width: 300px;
+            height: 420px;
+            font-size: 22px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form1">
+        <div class="f1">
+            <p style="text-align: center;font-size: 29px;">Sign up</p>
+        <form action="CRMSignupChecker" method="Post">
+            
+           <label for="uname"><img src="name2.png" width="16px" >&nbsp;NAME:</label><br/>
+           <input type="text" name="uname" id="uname" placeholder="Ex: Vishaka Nagdev"/><br/>
+           <label for="mail"><img src="mail.png" width="16px">&nbsp;E-Mail:</label><br/>
+           <input type="email" name="mail" id="mail" placeholder="XXXXXX@gmail.com"/><br/>
+           <label for="upassword"><img src="password.png" width="16px">&nbsp;Password:</label><br/>
+           <input type="Password" name="upassword" id="upassword" placeholder="********"/><br/>
+           <label for="phone"><img src="contact.png" width="16px">&nbsp;Contact No.:</label><br/>
+           <input type="tel" name="phone" id="phone" placeholder="95895-XXXXX"><br/>
+           <label for="uRole"><img src="role.png" width="16px">&nbsp;Role:</label><br/>
+           <select name="uRole" id="uRole" style="font-size: 18px;text-align: center;font-weight: bold;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <option>User</option>
+            <option>Employee</option>
+           </select><br/><br/>
+           <input type="submit" value="SignUp" style="align-self: center;font-size:22px;background-color: blue;color: white;">
+        </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+      .login{
+         display: flex;
+         width: 100vw;
+         height: 100vh;
+         flex-direction: row-reverse;
+        justify-content: end;
+        align-items: center;
+         background-image: url(final.png);
+         background-repeat: no-repeat;
+         /* background-attachment: fixed; */
+            background-size: 100%;
+        }
+        .loginform{
+             background-color: rgba(247, 242, 242, 0.4);
+             text-align: center;
+             font-size: 22px;
+             width: 290px;
+             height: 390px;
+             color:black;
+             position: relative;
+             right: 100px;
+             margin: 2px;
+             padding: 15px;
+             border-radius: 5px;
+        }
+    </style>
+    </head>
+    <body>
+       <div class="login">
+           <div class="loginform">
+               <img src="person2.png" alt="personlogo" width="80px"><br/>
+               <p style="text-align:center;font-size:25px;font-weight: bold;">Login Here</p>
+               
+               <form action="CRMLoginChecker" method="post">
+                   <label for="mail" ><img src="mail.png" alt="mailicon" width="16px">&nbsp; E-Mail:</label><br/>
+                   <input type="email" name="mail" id="mail" placeholder="XXXXXXX@gmail.com"><br/>
+                   <label for="password"><img src="password.png" width="16px">&nbsp;Password:</label><br/>
+                   <input type="password" name="password" id="password" placeholder="*******"><br/>
+                   <label>Role:</label><br>
+                    <select name="uRole" id="uRole" style="font-size: 18px;text-align: center;font-weight: bold;
+                            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <option>User</option>
+            <option>Employee</option>
+            <option>Admin</option>
+           </select><br/><br/>
+                   
+                   <input type="submit" value="Login" style="align-self: center;font-size:22px;color:white;background-color: black;">
+               </form>
+               
+           </div>
+       </div>
+    </body>
+    
+</html>
